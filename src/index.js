@@ -7,7 +7,7 @@ import Notiflix from 'notiflix';
 const debounce = require('lodash.debounce');
 const DEBOUNCE_DELAY = 300;
 const searchBox = document.getElementById("search-box");
-searchBox.addEventListener('input', debounce(onInputChange, wait = DEBOUNCE_DELAY));
+searchBox.addEventListener('input', debounce(onInputChange, DEBOUNCE_DELAY));
 
 function onInputChange(e) {
     e.preventDefault();
